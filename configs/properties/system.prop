@@ -66,6 +66,8 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+vendor.mm.enable.qcom_parser=16777215
+persist.mm.enable.prefetch=true
 
 # NTP
 persist.backup.ntpServer=0.pool.ntp.org
@@ -86,6 +88,14 @@ persist.sys.fuse.passthrough.enable=true
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
+
+#
+# system prop for opengles version
+#
+# 196608 is decimal for 0x30000 to report version 3
+# 196609 is decimal for 0x30001 to report version 3.1
+# 196610 is decimal for 0x30002 to report version 3.2
+ro.opengles.version=196610
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
