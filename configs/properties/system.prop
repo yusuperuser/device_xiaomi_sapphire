@@ -108,6 +108,3 @@ ro.vendor.use_data_netmgrd=true
 persist.vendor.data.mode=concurrent
 #system props for time-services
 persist.timed.enable=true
-
-# Disable vsync for cpu rendered apps
-debug.cpurend.vsync=false
