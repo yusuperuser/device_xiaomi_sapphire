@@ -491,4 +491,6 @@
 
 	<!-- Whether to play turbulence noise after clicking the play button -->
     <bool name="config_turbulenceNoise">false</bool>
+    <!-- Should we listen for fingerprints when the screen is off? -->
+    <bool name="config_fingerprintWakeAndUnlock">true</bool>
 </resources>
