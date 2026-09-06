@@ -14,8 +14,6 @@ $(call inherit-product, device/xiaomi/sapphire/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Exclude default browser (Jelly) — replaced by Brave
-PRODUCT_PACKAGES := $(filter-out Jelly, $(PRODUCT_PACKAGES))
 
 # Include our private certificate
 -include vendor/lineage-priv/keys/keys.mk
@@ -51,3 +49,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/sapphire_global/sapphire:15/AQ3A.240829.003/OS2.0.211.0.VNGMIXM:user/release-keys
 # GApps (MindTheGapps)
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
+# Exclude default browser (Jelly) — replaced by Brave
+PRODUCT_PACKAGES := $(filter-out Jelly, $(PRODUCT_PACKAGES))
