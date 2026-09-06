@@ -660,3 +660,7 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink \
     firmware_wlanmdsp.mbn_symlink
     
+
+# Brave Browser
+PRODUCT_PACKAGES += \
+    Brave

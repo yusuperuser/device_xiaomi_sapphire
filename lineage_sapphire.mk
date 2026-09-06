@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/sapphire/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Exclude default browser (Jelly) — replaced by Brave
+PRODUCT_PACKAGES := $(filter-out Jelly, $(PRODUCT_PACKAGES))
+
 # Include our private certificate
 -include vendor/lineage-priv/keys/keys.mk
 

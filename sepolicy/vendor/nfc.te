@@ -1,3 +1,2 @@
 allow nfc vendor_nfc_vendor_data_file:dir search;
-type vendor_nfc_prop, property_type, vendor_property_type;
 set_prop(vendor_init, vendor_nfc_prop)
