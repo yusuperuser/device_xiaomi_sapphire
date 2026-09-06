@@ -46,3 +46,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sapphire_global-user 15 AQ3A.240829.003 OS2.0.211.0.VNGMIXM release-keys" \
     BuildFingerprint=Redmi/sapphire_global/sapphire:15/AQ3A.240829.003/OS2.0.211.0.VNGMIXM:user/release-keys
+# GApps (MindTheGapps)
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
