@@ -15,6 +15,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
+
 # A/B
 AB_OTA_UPDATER := true
 
@@ -90,6 +91,10 @@ TARGET_PD_SERVICE_ENABLED := true
 
 #Enable peripheral manager
 TARGET_PER_MGR_ENABLED := true
+
+# Broken namespace
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):init_sapphire)
